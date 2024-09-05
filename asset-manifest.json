@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shotrecord/static/css/main.e6c13ad2.css",
+    "main.js": "/shotrecord/static/js/main.bd38417d.js",
+    "static/js/453.66768195.chunk.js": "/shotrecord/static/js/453.66768195.chunk.js",
+    "index.html": "/shotrecord/index.html",
+    "main.e6c13ad2.css.map": "/shotrecord/static/css/main.e6c13ad2.css.map",
+    "main.bd38417d.js.map": "/shotrecord/static/js/main.bd38417d.js.map",
+    "453.66768195.chunk.js.map": "/shotrecord/static/js/453.66768195.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.bd38417d.js"
+  ]
+}
