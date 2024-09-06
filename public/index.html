@@ -24,6 +24,14 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <script>
+      // Redirection pour toutes les routes qui ne sont pas disponibles
+      // Utilisé pour prendre en charge le routage client avec GitHub Pages
+      if (window.location.pathname !== '/') {
+        const redirectUrl = window.location.origin + '/';
+        window.history.replaceState({}, document.title, redirectUrl);
+      }
+    </script>
     <title>ShotRecord</title>
   </head>
   <body>
