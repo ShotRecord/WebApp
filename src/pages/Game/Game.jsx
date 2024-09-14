@@ -37,7 +37,10 @@ export default function Game() {
 
     useEffect(() => {
         if (thirdShoot !== null) {
-            const newShooterScore = [...shooterScore, {shoot1: firstShoot, shoot2: secondShoot, shoot3: thirdShoot}];
+            let sortShooterScore = [firstShoot, secondShoot, thirdShoot];
+            sortShooterScore.sort((a, b) => a - b);
+
+            const newShooterScore = [...shooterScore, {shoot1: sortShooterScore[0], shoot2: sortShooterScore[1], shoot3: sortShooterScore[2]}];
             let newShooterList = [...shooterList];
             newShooterList[shooterIndex] = {name: shooterName, scores: newShooterScore};
             setShooterList(newShooterList);
@@ -96,7 +99,7 @@ export default function Game() {
                             </IconButton>
                         }
                     </Stack>
-                    <Typography width={'100%'} color={'white'} align={'center'} fontWeight={'bold'}>{shooterName}</Typography>
+                    <Typography width={'100%'} color={'white'} align={'center'} fontWeight={'bold'} textTransform={'capitalize'}>{shooterName}</Typography>
                     <Stack width={'25%'}>
                         {shooterIndex !== (shooterList.length - 1)  &&
                             <IconButton onClick={() => changeShooter('next')}>
