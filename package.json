@@ -1,7 +1,7 @@
 {
   "name": "shotrecord",
   "version": "0.1.0",
-  "homepage": "https://QuentinM34.github.io/ShotRecord/",
+  "homepage": "https://shotrecord.github.io/WebApp/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.3",
